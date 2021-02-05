@@ -11,7 +11,7 @@ def index ():
 def nba ():
   return render_template('nba.html')
 
-@hello.route ('create-product' , methods=['POST'])
+@hello.route ('/create-product' , methods=['POST'])
 def create_product():
   name = request.form.get('name')
   product = Product(name)
